@@ -44,7 +44,7 @@ const Navbar = () => {
               />
             </svg>
           </button>
-          <div className="hidden w-full md:block md:mx-auto md:w-auto md:flex" id="navbar-default">
+          <div className="hidden w-full lg:block md:mx-auto md:w-auto" id="navbar-default">
             <ul className="font-medium flex items-center p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
               <li>
                 <a
@@ -83,10 +83,10 @@ const Navbar = () => {
               </li>
             </ul>
           </div>
-            <div>
+            <div className='hidden md:block'>
               <Image className='bg-black border-2 rounded-full p-1' src={profile} onClick={() => setisLoginSection(true)} alt='profile' width={35} height={35} />
             </div>
-          <div className='flex px-20 gap-2'>
+          <div className='hidden px-20 gap-2 md:flex'>
             <div>
               <Image className='bg-black border-2 rounded-full p-1' src={profile} onClick={() => setisLoginSection(true)} alt='profile' width={35} height={35} />
             </div>
